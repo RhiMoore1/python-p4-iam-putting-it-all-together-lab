@@ -8,7 +8,7 @@ from app import app
 from models import db, Recipe, User
 
 fake = Faker()
-
+# print('seeding...')
 with app.app_context():
 
     print("Deleting all records...")
@@ -61,3 +61,4 @@ with app.app_context():
     
     db.session.commit()
     print("Complete.")
+# print('done seeding!')
